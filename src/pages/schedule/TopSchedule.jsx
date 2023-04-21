@@ -10,8 +10,7 @@ const TopSchedule = () => {
   const Names = ["Please Select", "Lorem", "Lorem", "Lorem"];
   const Terms = ["Please Select", "Lorem", "Lorem", "Lorem"];
   const Subjects = ["Please Select", "Lorem", "Lorem", "Lorem"];
-  const handler = (e) => {
-    const { name, value } = e.target;
+  const handler = (name, value) => {
     setDropValues((prev) => ({ ...prev, [name]: value }));
   };
   return (
